@@ -65,7 +65,7 @@ $(document).ready( function() {
 
     calendars.clndr3 = $('.cal3').clndr({
         lengthOfTime: {
-            months: 4,
+            months: 3,
             interval: 1
         },
         events: eventArray,

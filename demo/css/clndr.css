@@ -187,108 +187,10 @@ html[xmlns] .clearfix {
 .cal1 .clndr .clndr-table tr:last-child .my-empty {
   border-bottom: 1px solid #000000;
 }
-.cal2 {
-  max-width: 177px;
-  margin: 30px auto;
-  font-family: 'Droid Sans Mono';
-}
-.cal2 .clndr .clndr-controls {
-  display: block;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 3px;
-}
-.cal2 .clndr .clndr-controls .clndr-previous-button {
-  float: left;
-  width: 10%;
-  text-align: left;
-  cursor: pointer;
-  -webkit-user-select: none;
-  /* Chrome/Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+ */
-}
-.cal2 .clndr .clndr-controls .clndr-previous-button:hover {
-  background-color: #f4f4f4;
-}
-.cal2 .clndr .clndr-controls .month {
-  float: left;
-  width: 80%;
-  text-align: center;
-}
-.cal2 .clndr .clndr-controls .clndr-next-button {
-  float: left;
-  width: 10%;
-  text-align: right;
-  cursor: pointer;
-  -webkit-user-select: none;
-  /* Chrome/Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+ */
-}
-.cal2 .clndr .clndr-controls .clndr-next-button:hover {
-  background-color: #f4f4f4;
-}
-.cal2 .clndr .clndr-grid {
-  text-align: center;
-  border: 1px solid #FF4545;
-  display: inline-block;
-}
-.cal2 .clndr .clndr-grid .header-day {
-  float: left;
-  width: 25px;
-  height: 25px;
-  background: #FF4545;
-}
-.cal2 .clndr .clndr-grid .day {
-  float: left;
-  width: 25px;
-  height: 25px;
-}
-.cal2 .clndr .clndr-grid .day.event {
-  background-color: #B4E09F;
-}
-.cal2 .clndr .clndr-grid .day.today {
-  background-color: #E3C57F;
-}
-.cal2 .clndr .clndr-grid .day.selected {
-  background-color: #E37FD6;
-}
-.cal2 .clndr .clndr-grid .day.inactive {
-  color: gray;
-}
-.cal2 .clndr .clndr-grid .empty,
-.cal2 .clndr .clndr-grid .adjacent-month {
-  float: left;
-  width: 25px;
-  height: 25px;
-  background: #ddd;
-}
-.cal2 .clndr .clndr-today-button {
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-}
-.cal2 .clndr .clndr-today-button:hover {
-  background-color: #ddd;
-}
-.cal2 .multi-month-controls .quarter-button {
-  display: inline-block;
-  width: 25%;
-}
-.cal2 .multi-month-controls .quarter-button:hover {
-  cursor: pointer;
-  background-color: #f4f4f4;
-}
-.cal2 .day.inactive {
-  background-color: #aaa;
-}
+
+
 .cal3 {
-  max-width: 354px;
+  max-width: 550px;
   margin: 0 auto;
   font-family: 'Droid Sans Mono';
 }
@@ -320,7 +222,7 @@ html[xmlns] .clearfix {
   /* IE10+ */
 }
 .cal3 .clndr .clndr-controls .clndr-previous-button:hover {
-  background-color: #f4f4f4;
+  background-color: #FF1493;
 }
 .cal3 .clndr .clndr-controls .month {
   text-align: center;
@@ -340,18 +242,20 @@ html[xmlns] .clearfix {
   /* IE10+ */
 }
 .cal3 .clndr .clndr-controls .clndr-next-button:hover {
-  background-color: #f4f4f4;
+  background-color: #FF1493;
 }
 .cal3 .clndr .clndr-grid {
   text-align: center;
-  border: 1px solid #FF4545;
+  /*Jooned kalendrite vahel*/
+  border: 1px solid black;
   display: inline-block;
 }
 .cal3 .clndr .clndr-grid .header-day {
   float: left;
   width: 25px;
   height: 25px;
-  background: #FF4545;
+  /*Nadala paevad*/
+  background: #FA8072;
 }
 .cal3 .clndr .clndr-grid .day {
   float: left;
@@ -359,7 +263,8 @@ html[xmlns] .clearfix {
   height: 25px;
 }
 .cal3 .clndr .clndr-grid .day.event {
-  background-color: #B4E09F;
+  /*Multi events*/
+  background-color: #40E0D0;
 }
 .cal3 .clndr .clndr-grid .day.today {
   background-color: #E3C57F;
@@ -369,6 +274,7 @@ html[xmlns] .clearfix {
   float: left;
   width: 25px;
   height: 25px;
+  /*Paevad teisest kuust*/
   background: #ddd;
 }
 .cal3 .clndr .clndr-today-button {
@@ -377,7 +283,7 @@ html[xmlns] .clearfix {
   cursor: pointer;
 }
 .cal3 .clndr .clndr-today-button:hover {
-  background-color: #ddd;
+  background-color: #40E0D0;
 }
 .cal3 .multi-month-controls .quarter-button {
   display: inline-block;
@@ -385,7 +291,7 @@ html[xmlns] .clearfix {
 }
 .cal3 .multi-month-controls .quarter-button:hover {
   cursor: pointer;
-  background-color: #f4f4f4;
+  background-color: #40E0D0;
 }
 .clndr-next-button,
 .clndr-previous-button,
