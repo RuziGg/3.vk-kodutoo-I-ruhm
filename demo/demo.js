@@ -8,16 +8,12 @@ $(document).ready( function() {
     var thisMonth = moment().format('YYYY-MM');
     var eventArray = [
         {
-            title: 'Multi-Day Event',
+			//Multi event
             endDate: thisMonth + '-14',
-            startDate: thisMonth + '-10'
+            startDate: thisMonth + '-9'
         }, {
-            endDate: thisMonth + '-23',
-            startDate: thisMonth + '-21',
-            title: 'Another Multi-Day Event'
-        }, {
+			//Single event
             date: thisMonth + '-27',
-            title: 'Single Day Event'
         }
     ];
 
@@ -67,37 +63,9 @@ $(document).ready( function() {
         adjacentDaysChangeMonth: false
     });
 
-    calendars.clndr2 = $('.cal2').clndr({
-        lengthOfTime: {
-            days: 14,
-            interval: 7
-        },
-        events: eventArray,
-        multiDayEvents: {
-            singleDay: 'date',
-            endDate: 'endDate',
-            startDate: 'startDate'
-        },
-        template: $('#template-calendar').html(),
-        clickEvents: {
-            click: function (target) {
-                console.log('Cal-2 clicked: ', target);
-            },
-            nextInterval: function () {
-                console.log('Cal-2 next interval');
-            },
-            previousInterval: function () {
-                console.log('Cal-2 previous interval');
-            },
-            onIntervalChange: function () {
-                console.log('Cal-2 interval changed');
-            }
-        }
-    });
-
     calendars.clndr3 = $('.cal3').clndr({
         lengthOfTime: {
-            months: 2,
+            months: 4,
             interval: 1
         },
         events: eventArray,
