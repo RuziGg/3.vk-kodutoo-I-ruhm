@@ -6,6 +6,36 @@
 <script src='moment.min.js'></script>
 <script src='jquery.min.js'></script>
 <script src='fullcalendar.min.js'></script>
+
+<div id="eventToAdd" style="display: none; font-size: 12px;">
+    Event name:
+    <input id="eventName" type="text" />
+ 
+    Event start date:
+    <input id="eventStartDate" type="text" />(MM-dd-yyyy)
+ 
+    Event end date:
+    <input id="eventEndDate" type="text" />(MM-dd-yyyy)
+ 
+</div>
+
+<script type="text/javascript">
+    $('div[id*=fullcal]').fullCalendar({
+        dayClick: function (dateSelected, allDay, jsEvent, view) {
+            $("#eventToAdd").dialog(
+            {
+                title: "Add event",
+                modal: true,
+                buttons: {
+                    "Add": function () {
+                       //event adding logic goes here                
+                    }
+                }
+            });
+        }
+    });
+</script>
+
 <script>
 	$(document).ready(function() {
 		
