@@ -6,36 +6,6 @@
 <script src='moment.min.js'></script>
 <script src='jquery.min.js'></script>
 <script src='fullcalendar.min.js'></script>
-
-<div id="eventToAdd" style="display: none; font-size: 12px;">
-    Event name:
-    <input id="eventName" type="text" />
- 
-    Event start date:
-    <input id="eventStartDate" type="text" />(MM-dd-yyyy)
- 
-    Event end date:
-    <input id="eventEndDate" type="text" />(MM-dd-yyyy)
- 
-</div>
-
-<script type="text/javascript">
-    $('div[id*=fullcal]').fullCalendar({
-        dayClick: function (dateSelected, allDay, jsEvent, view) {
-            $("#eventToAdd").dialog(
-            {
-                title: "Add event",
-                modal: true,
-                buttons: {
-                    "Add": function () {
-                       //event adding logic goes here                
-                    }
-                }
-            });
-        }
-    });
-</script>
-
 <script>
 	$(document).ready(function() {
 		
@@ -74,14 +44,20 @@
 					end: '2016-05-10'
 				},
 				{
-					id: 999,
-					title: 'Repeating Event',
-					start: '2016-05-09T16:00:00'
+					title: 'VK Eksam',
+					start: '2016-05-31T12:15:00'
 				},
 				{
-					id: 999,
-					title: 'Repeating Event',
-					start: '2016-05-16T16:00:00'
+					title: 'Multimeedium Eksam',
+					start: '2016-05-31T10:00:00'
+				},
+				{
+					title: 'Algoritmid ja andmestruktuurid',
+					start: '2016-06-01T12:00:00'
+				},
+				{
+					title: 'Hulgateooria',
+					start: '2016-06-03T10:00:00'
 				},
 				{
 					title: 'Conference',
